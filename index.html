@@ -36,6 +36,7 @@ Email: <input name="email" required="" size="60" type="email"/>
 <br> <br>
 <label for="shoeType">Preferred Shoe</label>
  <select id="shoeType" name="shoeType">
+  <option value="Lifestyle">Lifestyle</option>
    <option value="Running">Running</option>
    <option value="Cross Trainers">Cross Trainers</option>
    <option value="Sports">Sports</option>
@@ -77,12 +78,12 @@ Email: <input name="email" required="" size="60" type="email"/>
      products: [ {
        product_id: '507f1f77bcf86cd799439011',
        sku: '45790-32',
-       name: 'Air Jordan 4 - White / Military Blue - Fire Red',
-       price: 500.00,
+       name: 'Nike Air Max Genome - CW1648-002',
+       price: 170.00,
        position: 1,
-       category: 'Jordan',
-       url: 'https://www.example.com/product/path',
-       image_url: 'https://www.example.com/product/path.jpg'
+       category: 'Air Max',
+       url: 'https://www.nike.com/t/air-max-genome-mens-shoes-f4SHr3/CW1648-002',
+       image_url: 'https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/0090f15a-bfe6-46fd-9d20-147e1bfa9350/air-max-genome-mens-shoes-f4SHr3.png'
      }, {
        product_id: '505bd76785ebb509fc183733',
        sku: '46493-32',
@@ -95,27 +96,42 @@ Email: <input name="email" required="" size="60" type="email"/>
    analytics.track('Product Viewed', {
      product_id: '507f1f77bcf86cd799439011',
      sku: 'G-32',
-     category: 'Jordan',
-     name: 'Air Jordan 4 - White / Military Blue - Fire Red',
+     category: 'Air Max',
+     name: 'Nike Air Max Genome - CW1648-002',
      brand: 'Nike',
-     variant: 'November 2019',
-     price: 500.00,
+     variant: 'November 2021',
+     price: 170.00,
      quantity: 1,
      coupon: 'First_Purchase',
      currency: 'usd',
      position: 2,
-     value: 500,
+     value: 170,
      last_name: 'Bowerman',
-     url: 'https://www.example.com/product/path',
-     image_url: 'https://www.example.com/product/path.jpg'
+     url: 'https://www.nike.com/t/air-max-genome-mens-shoes-f4SHr3/CW1648-002',
+     image_url: 'https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/0090f15a-bfe6-46fd-9d20-147e1bfa9350/air-max-genome-mens-shoes-f4SHr3.png'
    });
+
+   analytics.track('Product Clicked', {
+    product_id: '507f1f77bcf86cd799439011',
+    sku: 'G-32',
+    category: 'Jordan',
+    name: 'Nike Air Max Genome - CW1648-002',
+    brand: 'Nike',
+    variant: '200 pieces',
+    price: 18.99,
+    quantity: 1,
+    coupon: 'MAYDEALS',
+    position: 3,
+    url: 'https://www.example.com/product/path',
+    image_url: 'https://www.example.com/product/path.jpg'
+  });
  
    analytics.track('Product Added', {
      cart_id: 'skdjsidjsdkdj29j',
      product_id: '507f1f77bcf86cd799439011',
      sku: 'G-32',
      category: 'Jordan',
-     name: 'Air Jordan 4 - White / Military Blue - Fire Red',
+     name: 'Nike Air Max Genome - CW1648-002',
      brand: 'Nike',
      variant: 'November 2019',
      price: 500.00,
@@ -142,7 +158,7 @@ Email: <input name="email" required="" size="60" type="email"/>
        {
          product_id: '507f1f77bcf86cd799439011',
          sku: 'G-32',
-         name: 'Air Jordan 4 - White / Military Blue - Fire Red',
+         name: 'Nike Air Max Genome - CW1648-002',
          price: 500.00,
          quantity: 1,
          category: 'Jordan',
